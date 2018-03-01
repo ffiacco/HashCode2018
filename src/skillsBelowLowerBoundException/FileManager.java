@@ -1,11 +1,13 @@
-package /*AAAAAAAAAAAAAAAAAAAAAA*/;
+package skillsBelowLowerBoundException;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.StringTokenizer;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -39,14 +41,18 @@ public class FileManager {
 	}
 
 	public static List<Object/*AAAAAAAAAAAAAAAAA*/> splitLines(List<String> lines){
+		List<Object/*AAAAAAAAAAAAAAAAA*/> out = new ArrayList<Object/*AAAAAAAAAAAA*/>();
 		StringTokenizer st;
 		for(String line : lines){
 			st = new StringTokenizer(line);
+			String s;
 			while (st.hasMoreTokens()) {
-				String s = st.nextToken();
+				s = st.nextToken();
 				/*AAAAAAAAAAAAA*/
 			}
+			//out.add();
 		}
+		return out;
 	}
 	
 }
