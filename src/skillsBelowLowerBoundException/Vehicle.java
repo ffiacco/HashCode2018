@@ -9,6 +9,7 @@ public class Vehicle {
 	private int y;
 	private List<Ride> rides;
 	private int freeCount;
+	private String rideString = "";
 	
 	public Vehicle(int x, int y) {
 		super();
@@ -57,4 +58,13 @@ public class Vehicle {
 	public void setRides(List<Ride> rides) {
 		this.rides = rides;
 	}
+	
+	public void addRide(int ride){
+		rideString = rideString + " " + ride;
+	}
+
+	public String getRideString() {
+		return rideString;
+	}
+	
 }

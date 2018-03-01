@@ -7,6 +7,8 @@ public class Ride {
 	private int y; 
 	private int s; 
 	private int f; 
+	
+	private int index;
 
 	public Ride(int a, int b, int x, int y, int s, int f) {
 		super();
@@ -53,5 +55,15 @@ public class Ride {
 	}
 	public void setF(int f) {
 		this.f = f;
-	}			
+	}
+
+	public int getIndex() {
+		return index;
+	}
+
+	public void setIndex(int index) {
+		this.index = index;
+	}
+	
+	
 }

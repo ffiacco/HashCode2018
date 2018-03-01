@@ -40,17 +40,20 @@ public class FileManager {
 		}
 	}
 
-	public static List<Object/*AAAAAAAAAAAAAAAAA*/> splitLines(List<String> lines){
-		List<Object/*AAAAAAAAAAAAAAAAA*/> out = new ArrayList<Object/*AAAAAAAAAAAA*/>();
+	public static List<Ride> splitLines(List<String> lines){
+		List<Ride> out = new ArrayList<Ride>();
 		StringTokenizer st;
+		int a, b, x, y, s, f;
 		for(String line : lines){
 			st = new StringTokenizer(line);
-			String s;
-			while (st.hasMoreTokens()) {
-				s = st.nextToken();
-				/*AAAAAAAAAAAAA*/
-			}
-			//out.add();
+			a = Integer.parseInt(st.nextToken());
+			b = Integer.parseInt(st.nextToken());
+			x = Integer.parseInt(st.nextToken());
+			y = Integer.parseInt(st.nextToken());
+			s = Integer.parseInt(st.nextToken());
+			f = Integer.parseInt(st.nextToken());
+			
+			out.add(new Ride(a, b, x, y, s, f));
 		}
 		return out;
 	}
